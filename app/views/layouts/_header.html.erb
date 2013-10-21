@@ -1,8 +1,6 @@
-<ul class="nav nav-pills pull-right">
-  <li class="active"><a href="#">Home</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#sign-up">Sign Up!</a></li>
-</ul>
-<h3 class="muted">Club Incense</h3>
-
-<hr>
+<center>
+	<% if flash[:errors] %>
+		<%= flash[:errors] %>
+		<hr>
+	<% end %>
+</center>

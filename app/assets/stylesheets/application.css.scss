@@ -10,29 +10,62 @@
  *
  *= require_self
  *= require_tree .
+ *= require font-awesome
  */
 
- @import "twitter/bootstrap";
+@import "font-awesome";
+
+ /* Adrift_in_Dreams Palette */
+ /* http://www.colourlovers.com/palette/580974/Adrift_in_Dreams */
+$sunlitgreen: #CFF09E;
+$seafoamgreen: #A8DBA8;
+$seagreen: #79BD9A;
+$sailgreen: #3B8686;
+$adriftgreen: #0B486B;
+
+/* colors */
+$link-color: $adriftgreen;
+$text-color: $adriftgreen;
+$hr-border-color: $adriftgreen;
+$button-background-color: $sailgreen;
+$button-border-color: $seafoamgreen;
+$button-hover-background-color: $adriftgreen;
+$button-hover-border-color: $sailgreen;
+
+@import "twitter/bootstrap";
 
 body {
   padding-top: 20px;
   padding-bottom: 40px;
 }
 
+/* fonts */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Avenir Next', Georgia, Times, serif;
+}
+p, div {
+    font-family: 'Avenir Next', Helvetica, Arial, sans-serif;
+}
+
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
-  max-width: 700px;
-}
-.container-narrow > hr {
-  margin: 30px 0;
+  max-width: 900px;
+	background: rgba(207, 240, 158, .8); /* Hex Value: #CFF09E */
+  padding: 30px 10px 10px 10px;
 }
 
-/* Main marketing message and sign up button */
+hr {
+  margin: 30px 0;
+	border-color: $hr-border-color
+}
+
+/* Main info message and sign up button */
 .jumbotron {
   margin: 0px 0;
   text-align: center;
-  background-color: white;
+  background-color: transparent;
   padding: 10px;
 }
 .jumbotron h1 {
@@ -42,20 +75,36 @@ body {
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
+  background-color: $button-background-color;
+  border-color: $button-border-color;
+  &:hover {
+    border-color: $button-hover-border-color;
+    background-color: $button-hover-background-color;
+  }
 }
 
-/* Supporting marketing content */
-.marketing {
+/* Supporting info content */
+.info {
   margin: 60px 0;
   text-align: center;
 }
-.marketing p + h4 {
+.info p + h4 {
   margin-top: 28px;
 }
 
-/* input field for email */
+/* Notification */
 .input-email {
 	width: 300px;
+}
+
+.notify .btn {
+  background-color: $button-background-color;
+  border-color: $button-border-color;
+  color: white;
+  &:hover {
+    border-color: $button-hover-border-color;
+    background-color: $button-hover-background-color;
+  }
 }
 
 /* Reduce h1 font-size on small screens */
@@ -63,7 +112,7 @@ body {
   
 	.jumbotron h1 { 
 	  font-size: 40px;
-	  background-color: white;
+	  background-color: transparent;
 	}  
 
 }

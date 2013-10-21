@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require 'jquery.backstretch'
 //= require_tree .
-//= require twitter/bootstrap
+//= require twitter/bootstrap/button
