@@ -9,8 +9,9 @@ gem 'pg'
 gem 'bcrypt-ruby'
 gem 'rabl'
 gem 'quiet_assets', :group => :development
-gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
+gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails', 
                               :github => 'anjlab/bootstrap-rails'
+gem 'bootstrap-glyphicons'
 gem 'sass-rails',   '~> 3.2.3'
 gem 'coffee-rails', '~> 3.2.1'
 gem 'uglifier', '>= 1.0.3'
